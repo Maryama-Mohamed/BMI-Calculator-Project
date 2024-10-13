@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BMI Calculator Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>BMI Calculator</h1>
+            </header>
+            <div class="input-fields">
+                <label for="weight">Height(in cm):</label>
+                <input type="number" id="height" placeholder="Enter height in cm" step="0.01" required>
+                <label for="weight">Width(in kg):</label>
+                <input type="number" id="weight" placeholder="Enter weight in kg" step="0.1" required>
+            </div>
+            <button id="calculateBtn">Caculate BMI</button>
+            <div class="result">
+                <p>Your BMI is: <span id="bmiValue">--</span></p>
+                <p id="bmiCategory"></p>
+                <div id="suggestion"></div>
+            </div>
+        </div>
+      
+       
+        <script src="./main.js"></script>
+    </body>
+</html>
